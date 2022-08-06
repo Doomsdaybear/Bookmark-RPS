@@ -26,9 +26,11 @@ if(input == "r"){
 }
 if(input == "p"){
   var choosing = Math.floor(Math.random() * 4)
+  if (choosing == 0) {
+    alert("Bot picks 0! This is a bug, please ignore it and try again!");
+  }
   if(choosing == 1){
     alert("Rock, you win!");
-    
   }
   if(choosing == 2){
     alert("Paper, its a tie");
@@ -40,6 +42,9 @@ if(input == "p"){
 }
 if(input == "s"){
    var choosing = Math.floor(Math.random() * 4)
+  if (choosing == 0) {
+    alert("Bot Picks 0! This is a bug, so ignore it and try again.");
+  }
    if(choosing == 1){
      alert("Rock,bot wins!")
    }
